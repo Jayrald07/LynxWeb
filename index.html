@@ -3,21 +3,22 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <style>
       #greet-text {
-        font-size:1pt;
+        font-size:12pt;
         transition:all 1s;
       }
     </style>
   </head>
 <body>
   <div class="jumbotron bg-dark text-white" style="border-radius:0;padding: 30px 30px">
-    <h5 id="greet-text">Hello There!</h5>
+    <h5 id="greet-text text-center">Hello There!</h5>
   </div>
 </body>
   <script type="text/javascript">
     (function() {
       document.body.onload = function() {
         const txt = document.getElementById('greet-text');
-        txt.style.fontSize = "12pt";
+//         txt.style.fontSize = "12pt";
+        txt.classList.toggle('text-center');
         txt.textContent = "Changed";
          
       }
