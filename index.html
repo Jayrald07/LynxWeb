@@ -15,9 +15,13 @@
 </body>
   <script type="text/javascript">
     (function() {
-      const txt = document.getElementById('greet-text');
-      txt.style.fontSize = "12pt";
-      txt.textContent = "Changed";
-    })();
+      document.body.onload = function() {
+        const txt = document.getElementById('greet-text');
+        txt.style.fontSize = "12pt";
+        txt.textContent = "Changed";
+         })();
+      }
+      
+     
   </script>
 </html>
